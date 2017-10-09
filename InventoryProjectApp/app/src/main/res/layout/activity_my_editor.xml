@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFF90">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        >
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:textColor="#64DD17"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:textSize="22sp"/>
+        <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#64DD17"
+            android:hint="Enter name"
+            android:maxLength="9"
+            android:inputType="textCapWords"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        >
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="wrap_content"
+            android:textColor="#64DD17"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:textSize="22sp"/>
+        <EditText
+            android:id="@+id/edit_text_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#64DD17"
+            android:hint="Enter price"
+            android:maxLength="9"
+            android:inputType="textCapWords"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select IMAGE"
+        android:background="#64DD17"
+        android:layout_marginLeft="120dp"
+        android:shadowColor="#64DD17"
+        android:id="@+id/Product_Image_Button"/>
+    <ImageView
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/Product_Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        >
+        <TextView
+            android:id="@+id/text_view_discount"
+            android:layout_width="wrap_content"
+            android:textColor="#64DD17"
+            android:layout_height="wrap_content"
+            android:text="Discount(%) :"
+            android:textSize="22sp"/>
+        <EditText
+            android:id="@+id/edit_text_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#64DD17"
+            android:hint="Enter disocunt"
+            android:maxLength="9"
+            android:inputType="textCapWords"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="18dp">
+
+        <TextView
+            android:textColor="#64DD17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingRight="0dp"
+            android:text="Quantity :-"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button_incr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:background="#64DD17"/>
+
+        <EditText
+            android:textColorHint="#FFC107"
+            android:id="@+id/edit_text_quantity"
+            android:maxLength="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Quantity"
+            android:inputType="number"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/button_decr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:background="#64DD17"/>
+
+    </LinearLayout>
+
+</LinearLayout>
